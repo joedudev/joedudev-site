@@ -1,0 +1,25 @@
+{
+	"name": "joedudev-site",
+	"version": "1.0.0",
+	"description": "Hola mundo! Soy Eduardo Reyes, conocido como JoEdu. Y este es mi sitio web.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"sass": "sass --watch src/styles/main.scss:css/main.css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/joedudev/joedudev-site.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"bugs": {
+		"url": "https://github.com/joedudev/joedudev-site/issues"
+	},
+	"homepage": "https://github.com/joedudev/joedudev-site#readme",
+	"devDependencies": {
+		"sass": "^1.108.2"
+	}
+}
