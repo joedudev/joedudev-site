@@ -22,3 +22,22 @@ $color-text-muted: #a3add0;
 // Texto sobre fondos de color
 $color-on-primary: #ffffff;
 $color-on-accent: $color-bg;
+
+// ==========================================================================
+// Tipografía: Electrolize + Inter + JetBrains Mono
+// ==========================================================================
+
+// Familias (con fallbacks por si la fuente no carga)
+$font-heading: "Electrolize", system-ui, sans-serif;
+$font-body:
+	"Inter",
+	system-ui,
+	-apple-system,
+	"Segoe UI",
+	sans-serif;
+$font-code: "JetBrains Mono", ui-monospace, "Fira Code", monospace;
+
+// Pesos
+$font-weight-regular: 400; // Electrolize solo existe en este peso
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
