@@ -1,0 +1,24 @@
+// ==========================================================================
+// Variables: Paleta "Zafiro profundo + cian" (tema oscuro)
+// ==========================================================================
+
+// Fondos (de más profundo a más elevado)
+$color-bg: #0a1128;
+$color-surface: #111b3a;
+$color-raised: #182450;
+$color-border: #27366e;
+
+// Marca
+$color-primary: #3858e9;
+$color-primary-hover: #5573f0;
+
+// Acento (usar con moderación, solo para acciones destacadas)
+$color-accent: #22d3ee;
+
+// Texto
+$color-text: #e6eaf7;
+$color-text-muted: #a3add0;
+
+// Texto sobre fondos de color
+$color-on-primary: #ffffff;
+$color-on-accent: $color-bg;
