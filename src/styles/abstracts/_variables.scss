@@ -75,3 +75,30 @@ $breakpoints: (
 	// 768px
 	xl: 64em, // 1024px: escritorio
 );
+
+// ==========================================================================
+// Tamaños de texto
+// ==========================================================================
+$font-size-sm: 0.875rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.25rem;
+$font-size-xl: 1.5rem;
+$font-size-2xl: fluid(2rem, 3rem); // título principal, crece con la pantalla
+
+$line-height-tight: 1.2; // títulos
+$line-height-base: 1.6; // párrafos
+
+// ==========================================================================
+// Bordes y esquinas
+// ==========================================================================
+$border-width: 1px;
+$border: $border-width solid $color-border;
+
+$radius-md: 0.75rem; // tarjetas
+$radius-sm: 0.5rem; // botones
+$radius-full: 999px; // avatar redondo
+
+// ==========================================================================
+// Transiciones
+// ==========================================================================
+$transition-fast: 150ms ease;
