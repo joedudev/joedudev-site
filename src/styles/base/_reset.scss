@@ -1,0 +1,78 @@
+// ==========================================================================
+// Reset mínimo y moderno
+// Solo neutraliza diferencias entre navegadores. No define el "look" del sitio.
+// ==========================================================================
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%; // evita que iOS agrande el texto al girar el móvil
+}
+
+body {
+	min-height: 100svh; // reemplaza el 100vh de tu versión anterior
+	-webkit-font-smoothing: antialiased;
+}
+
+// Medios: sin hueco inferior y nunca más anchos que su contenedor
+img,
+picture,
+svg,
+video {
+	display: block;
+	max-width: 100%;
+}
+
+// Los controles de formulario heredan la tipografía del sitio
+input,
+button,
+textarea,
+select {
+	font: inherit;
+	color: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+a {
+	color: inherit;
+}
+
+// Solo las listas marcadas con role="list" pierden los puntos
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
+}
+
+// Evita que textos largos (URLs, palabras largas) rompan el diseño en móvil
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+// Respeta a quien pidió menos movimiento en su sistema
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		transition-duration: 0.01ms !important;
+	}
+}
