@@ -1,0 +1,9 @@
+@use "sass:math";
+
+// Genera un clamp() que crece de forma lineal entre dos anchos de pantalla.
+// Por defecto: de 320px (20rem) a 768px (48rem).
+@function fluid($min, $max, $vw-min: 20rem, $vw-max: 48rem) {
+	$slope: math.div($max - $min, $vw-max - $vw-min);
+	$intercept: $min - $slope * $vw-min;
+	@return clamp(#{$min}, #{$intercept} + #{$slope * 100}vw, #{$max});
+}
