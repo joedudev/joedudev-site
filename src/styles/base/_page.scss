@@ -1,0 +1,11 @@
+@use "../abstracts" as *;
+
+body {
+	background-color: $color-bg;
+}
+
+// Foco visible para quien navega con teclado
+:focus-visible {
+	outline: 2px solid $color-accent;
+	outline-offset: 2px;
+}
