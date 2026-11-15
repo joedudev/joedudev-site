@@ -1,0 +1,63 @@
+@use "../abstracts" as *;
+
+// ==========================================================================
+// Tipografía global: familias, tamaños, interlineado y color del texto
+// ==========================================================================
+
+body {
+	font-family: $font-body;
+	font-size: $font-size-md;
+	line-height: $line-height-base;
+	color: $color-text;
+}
+
+// Títulos: Electrolize solo tiene peso 400, así que se fija para evitar negrita falsa
+h1,
+h2,
+h3,
+h4 {
+	font-family: $font-heading;
+	font-weight: $font-weight-regular;
+	line-height: $line-height-tight;
+	text-wrap: balance; // reparte las líneas del título de forma pareja en móvil
+}
+
+h1 {
+	font-size: $font-size-2xl; // fluido: 2rem → 3rem
+}
+
+h2 {
+	font-size: $font-size-xl;
+}
+
+h3 {
+	font-size: $font-size-lg;
+}
+
+small {
+	font-size: $font-size-sm;
+}
+
+strong {
+	font-weight: $font-weight-semibold;
+}
+
+// Enlaces: mantienen el subrayado para que no dependan solo del color
+a {
+	color: $color-accent;
+	text-underline-offset: 0.2em;
+	transition: color $transition-fast;
+
+	&:hover {
+		color: $color-text;
+	}
+}
+
+// Solo la fuente. El aspecto de los bloques de código del blog irá en un módulo
+code,
+pre,
+kbd,
+samp {
+	font-family: $font-code;
+	font-size: 0.9em;
+}
